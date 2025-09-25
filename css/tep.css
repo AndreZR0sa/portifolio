@@ -1,0 +1,29 @@
+body{
+    width: 100vw;
+    min-height: 100vh;
+    padding: 40px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h2{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+p{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
+}
+
+a{
+    color: var(--Color-4, #00ADB5);
+    text-decoration: none;
+}

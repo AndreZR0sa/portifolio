@@ -313,5 +313,9 @@ footer .termos{
     justify-content: center;
     align-items: center;
     width: 100%;
+}
 
+footer .termos a{
+    color: var(--Color-3, #00ADB5);
+    text-decoration: none;
 }
