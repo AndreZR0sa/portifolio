@@ -18,15 +18,18 @@
         </p>
         <nav class="nav-menu">
             <ul class="nav-itens">
-                <a href="#" class="nav-item">
+                <button class="nav-item" id="homeC" onclick="scrollToTarget()">
                     Home
-                </a>
-                <a href="#" class="nav-item">
+                </button>
+                <button class="nav-item" id="sobreC" onclick="scrollToSobre()">
                     Sobre mim
-                </a>
-                <a href="#" class="nav-item">
+                </button>
+                <button class="nav-item" id="trabalhoC" onclick="scrollToTrabalho()">
+                    Trabalhos
+                </button>
+                <button class="nav-item" id="contatoC" onclick="scrollToContato()">
                     Contato
-                </a>
+                </button>
             </ul>
         </nav>
     </header>
@@ -37,9 +40,12 @@
                     DESENVOVEDOR DE <span>SOFTWARE</span>
                 </h1>
                 <div class="btns">
-                    <button class="contrato">Contrate me</button>
-                    <button class="cv">Baixar CV <img src="image/download.png" alt=""></button>
+                    <button id="contrato-btn" onclick="contrate()">Contrate me</button>
+                    <button id="cv" onclick="baixar()">Baixar CV <img src="image/download.png" alt=""></button>
                 </div>
+                <p>
+                    Nesse portifólio você encontrará uma seleção dos meus melhores trabalhos, projetos e habilidades. Sinta-se à vontade para explorar e conhecer mais sobre mim e meu trabalho.
+                </p>
             </div>
             <div class="direita">
                 <img src="image/Gemini_Generated_Image_c4yfmuc4yfmuc4yf.png" alt="pc">
@@ -51,14 +57,22 @@
                     Sobre <span>mim</span>
                 </h1>
                 <p>
-                    Sou desenvolvedor de software e meu trabalho é transformar ideias em soluções digitais funcionais. Participo de todo o processo, desde entender as necessidades do usuário até programar, testar e entregar sistemas de qualidade. Busco sempre escrever códigos limpos, aplicar boas práticas e acompanhar novas tecnologias para criar softwares que realmente resolvam problemas e facilitem o dia a dia das pessoas.
+                    Olá, meu nome é André, tenho 16 anos e sou um desenvolvedor de software apaixonado por tecnologia e inovação. Desde cedo, sempre fui fascinado por computadores e como eles funcionam, o que me levou a explorar o mundo da programação e do desenvolvimento de software.
+                    <br><br>
+                    Atualmente, estou focado em aprimorar minhas habilidades em várias linguagens de programação, incluindo HTML, CSS, JavaScript e Python. Tenho experiência em desenvolvimento web, criação de aplicativos e automação de tarefas. Adoro enfrentar desafios técnicos e encontrar soluções criativas para problemas complexos.
+                    <br><br>
+                    Além do desenvolvimento de software, também sou um entusiasta de design e usabilidade. Acredito que a combinação de um bom design com uma funcionalidade sólida é essencial para criar experiências digitais memoráveis.
+                    <br><br>
+                    Estou sempre em busca de aprender novas tecnologias e tendências no campo do desenvolvimento de software. Acredito que a educação contínua é fundamental para se manter atualizado em um setor tão dinâmico.
+                    <br><br>
+                    Se você está procurando um desenvolvedor dedicado, apaixonado e comprometido com a excelência, estou pronto para colaborar em projetos emocionantes. Vamos trabalhar juntos para transformar ideias em realidade!
                 </p>
             </div>
             <div class="direita">
                 <img src="image/unnamed.png" alt="">
             </div>
         </section>
-        <section class="trabalho">
+        <section id="trabalho">
             <div class="cima">
                 <h1>
                     Meus trabalhos <span>Recentes</span>
@@ -77,10 +91,10 @@
                 <h1>
                     Algum projeto em <span>mente?</span>
                 </h1>
-                <img src="" alt="">
+                <img src="image/pro.png" alt="">
             </div>
             <div class="direita1">
-                <form action="">
+                <form method="get" action="">
                     <label for="nome">Seu Nome</label>
                     <br>
                     <input type="text" name="nome" id="nome" placeholder="Nome">
@@ -92,7 +106,7 @@
                     <label for="mensagem">Sua mensagem</label>
                     <br>
                     <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
-                    <button type="submit" class="enviar">
+                    <button type="submit" class="enviar" onclick="enviar()">
                         Enviar Mensagem <img src="image/send.png" alt="">
                     </button>
                 </form>
@@ -101,19 +115,21 @@
     </main>
     <footer>
         <div class="escolha">
-            <div><img src="image/home.png" alt=""><p>Home</p></div>
-            <div><img src="image/user.png" alt=""><p>Sobre mim</p></div>
-            <div><img src="image/phone.png" alt=""><p>Contato</p></div>
+            <button><img src="image/home.png" alt="" id="homeC" onclick="scrollToTarget()"><p>Home</p></button>
+            <button><img src="image/user.png" alt="" id="sobreC" onclick="scrollToSobre()"><p>Sobre mim</p></button>
+            <button><img src="image/phone.png" alt="" id="contatoC" onclick="scrollToContato()"><p>Contato</p></button>
         </div>
-        <div class="redes">
-            <button><img src="image/facebook.png" alt=""></button>
-            <button><img src="image/instagram.png" alt=""></button>
-            <button><img src="image/twitter.png" alt=""></button>
-            <button><img src="image/youtube.png" alt=""></button>
-        </div>
-        <div>
+        <div class="termos">
             Termos de Serviço - Política de Privacidade
         </div>
+        <div id="contato">
+            <button onclick="face()"><img src="image/facebook.png" alt=""></button>
+            <button onclick="insta()"><img src="image/instagram.png" alt=""></button>
+            <button onclick="linke()"><img src="image/twitter.png" alt=""></button>
+            <button onclick="git()"><img src="image/youtube.png" alt=""></button>
+            <button onclick="whats()"><img src="image/gmail.png" alt=""></button>
+        </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
